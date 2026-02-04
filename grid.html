@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Example</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        grid-template-areas:
+          "one three"
+          "two four"
+          "five seven"
+          "six eight"
+          "nine eleven"
+          "ten twelve";
+      }
+      div {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px 0px rgb(241, 219, 219);
+        background-color: rgb(17, 2, 22);
+        color: white;
+        font-size: 80px;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid Layout Example</h1>
+    <section class="grid">
+      <div style="grid-area: one">1</div>
+      <div style="grid-area: two">2</div>
+      <div style="grid-area: three">3</div>
+      <div style="grid-area: four">4</div>
+      <div style="grid-area: five">5</div>
+      <div style="grid-area: six">6</div>
+      <div style="grid-area: seven">7</div>
+      <div style="grid-area: eight">8</div>
+      <div style="grid-area: nine">9</div>
+      <div style="grid-area: ten">10</div>
+      <div style="grid-area: eleven">11</div>
+      <div style="grid-area: twelve">12</div>
+    </section>
+  </body>
+</html>
